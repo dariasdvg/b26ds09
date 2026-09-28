@@ -33,7 +33,15 @@ blockquote {
 }
 h1 {
   font-size: 38px;
-  margin: 50px auto;
+  margin: 30px auto;
+}
+h1 + p,
+h1 + p a {
+  color: #666;
+  transition: color 0.6s ease;
+}
+h1 + p a:hover {
+  color: blue;
 }
 h2 {
   font-size: 32px;
@@ -63,4 +71,75 @@ img {
   width: 1024px;
   margin: 30px auto;
   display: block;
+}
+ol {
+  padding-left: 30px;
+  list-style-type: decimal;
+}
+ul {
+  padding-left: 30px;
+  list-style-type: disc;
+}
+li {
+  margin: 8px 0;
+}
+blockquote {
+  font-style: italic;
+  position: relative;
+}
+blockquote::before {
+  position: absolute;
+  content: " ";
+  width: 3px;
+  height: 100%;
+  background-color: black;
+  top: 0;
+  left: -17px;
+}
+.sidebar {
+  width: 280px;
+  margin-top: 58px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.2;
+  transition: opacity 0.6s ease;
+}
+.sidebar:hover {
+  opacity: 1;
+}
+.sidebar ul {
+  width: 100%;
+  margin: 0;
+}
+.sidebar li {
+  list-style-type: none;
+  font-size: 12px;
+  margin: 0;
+  line-height: 1.4;
+}
+.sidebar a {
+  color: black;
+  text-decoration: none;
+}
+.sidebar a:hover {
+  text-decoration: underline;
+}
+/*стили для верхнего меню*/
+.menubar {
+  width: 80%;
+  margin: 10px auto;
+  font-size: 14px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 22px;
+}
+.menubar a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.6s ease;
+}
+.menubar a:hover {
+  color: #666;
+  text-decoration: underline;
 }
