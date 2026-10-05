@@ -143,3 +143,27 @@ blockquote::before {
   color: #666;
   text-decoration: underline;
 }
+
+/* стили для about.html */
+.about-page::before {
+  content: "";
+  width: 1440px;
+  height: 3120px;
+  background-image: url("../images/1440.png");
+  position: absolute;
+}
+
+.about h2,
+.about p,
+.about img {
+  margin: 0;
+  width: 100%;
+}
+.section-1 div {
+  width: 50%;
+  overflow-x: hidden;
+}
+.section-1 {
+  margin-top: 170px;
+  display: flex;
+}
